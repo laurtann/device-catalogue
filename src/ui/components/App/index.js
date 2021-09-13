@@ -17,6 +17,9 @@ const App = () => (
       <Route path="/iphones">
         <IPhones />
       </Route>
+      <Route>
+        <NotFound />
+      </Route>
     </Switch>
   </Router>
 );
