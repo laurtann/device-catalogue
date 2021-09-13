@@ -1,9 +1,12 @@
 var express = require('express');
 var app = express();
+const cors = require("cors");
 var router = express.Router();
 var PORT = 8081;
 
-router.get('/watches', function(req, res) {
+app.use(cors());
+
+router.get('/watches', function (req, res) {
   res.json({
     data: [
       {
@@ -25,13 +28,13 @@ router.get('/watches', function(req, res) {
   });
 });
 
-router.get('/iphones', function(req, res) {
+router.get('/iphones', function (req, res) {
   res.json({
     data: [
       {
         name: 'iPhone 12 Pro',
         brand: 'Apple',
-        price: 1399 
+        price: 1399
       },
       {
         name: 'iPhone 12',
