@@ -7,6 +7,7 @@ module.exports = {
   entry: './src/client.jsx',
   devServer: {
     contentBase: './dist',
+    historyApiFallback: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -21,7 +22,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/, 
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
