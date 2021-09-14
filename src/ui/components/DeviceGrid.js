@@ -11,20 +11,11 @@ const DeviceGrid = ({ deviceData, deviceImage }) => {
           deviceData.map((device, index) => {
             return (
               <FlexGrid.Col key={index} xs={12} md={3}>
-                <DeviceCard brand={device.brand} name={device.name} price={device.price} />
+                <DeviceCard brand={device.brand} name={device.name} price={device.price} image={deviceImage} />
               </FlexGrid.Col>
             )
           })
         }
-        <FlexGrid.Col xs={12} md={3}>
-          <DeviceCard />
-        </FlexGrid.Col>
-        <FlexGrid.Col xs={12} md={3}>
-          <DeviceCard />
-        </FlexGrid.Col>
-        <FlexGrid.Col xs={12} md={3}>
-          <DeviceCard />
-        </FlexGrid.Col>
       </FlexGrid.Row>
     </FlexGrid>
   )

@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import Heading from '@tds/core-heading';
 import DeviceGrid from '../DeviceGrid';
 import axios from 'axios';
-import watchImg from '../../../../public/images/watch.jpg'
+import watchImg from '../../../../public/images/watch.jpg';
 
 
 const Watches = () => {
