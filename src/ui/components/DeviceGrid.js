@@ -10,7 +10,7 @@ const DeviceGrid = ({ deviceData, deviceImage }) => {
         {
           deviceData.map((device, index) => {
             return (
-              <FlexGrid.Col key={index} xs={12} md={3}>
+              <FlexGrid.Col key={index} xs={12} md={4} className="grid-column">
                 <DeviceCard brand={device.brand} name={device.name} price={device.price} image={deviceImage} />
               </FlexGrid.Col>
             )
