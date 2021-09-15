@@ -2,8 +2,12 @@ import React, { Fragment } from 'react';
 import Heading from '@tds/core-heading';
 import iPhoneImg from '../../../../public/images/iphone.jpg';
 import watchImg from '../../../../public/images/watch.jpg';
-import PageLink from '../PageLink';
+import PageLink from './PageLink';
 import FlexGrid from '@tds/core-flex-grid';
+
+// Mock for unit tests
+// const iPhoneImg = '';
+// const watchImg = '';
 
 const Home = () => {
   // Page information to pass into the PageLink Component

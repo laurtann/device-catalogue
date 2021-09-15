@@ -3,7 +3,7 @@ import TdsLink from '@tds/core-link';
 import Card from '@tds/core-card';
 import Box from '@tds/core-box';
 import Image from '@tds/core-image';
-import Link from './LinkWrapper';
+import Link from '../shared/LinkWrapper';
 
 const PageLink = ({ image, path, linkText, altText }) => {
   return (

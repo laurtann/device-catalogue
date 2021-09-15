@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Heading from '@tds/core-heading';
 import TdsLink from '@tds/core-link';
-import Link from '../LinkWrapper';
+import Link from '../shared/LinkWrapper';
 
 const NotFound = () => {
   return (
