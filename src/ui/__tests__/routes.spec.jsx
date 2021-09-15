@@ -1,9 +1,8 @@
 import React from 'react';
-import {MemoryRouter} from 'react-router-dom';
-import {mount, configure} from 'enzyme';
+import { MemoryRouter } from 'react-router-dom';
+import { mount } from 'enzyme';
 import App from '../components/App';
 import Home from '../components/Home';
-import NotFound from '../components/NotFound';
 
 describe('Application routes', () => {
   it('should render a Home component', () => {
@@ -12,7 +11,6 @@ describe('Application routes', () => {
         <App />
       </MemoryRouter>
     );
-
     expect(wrapper.find(Home)).toHaveLength(1);
   });
 });
