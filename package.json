@@ -1,11 +1,17 @@
 {
   "name": "device-catalogue-shell",
   "main": "index.js",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jest/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
   "scripts": {
     "dev:ui": "webpack serve",
     "dev:server": "node ./src/server.js",
     "dev": "concurrently --kill-others \"npm run dev:ui\" \"npm run dev:server\"",
-    "unit": "jest"
+    "unit": "jest --silent"
   },
   "dependencies": {
     "@tds/core-box": "^2.3.4",
@@ -41,6 +47,7 @@
     "css-loader": "^5.0.2",
     "enzyme-adapter-react-16": "^1.15.6",
     "html-webpack-plugin": "^5.0.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "style-loader": "^2.0.0",
     "webpack": "^5.21.2",
