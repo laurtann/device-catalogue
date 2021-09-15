@@ -35,7 +35,7 @@ const Watches = () => {
       {
         watchData.length === 0 && !fetching ? (
           <Fragment>
-            <DeviceNotFound text="iPhones" />
+            <DeviceNotFound text="Watches" />
             <BottomLink path={"/watches"} text={"Browse Watches"} />
           </Fragment>
         ) : !fetching ? (
